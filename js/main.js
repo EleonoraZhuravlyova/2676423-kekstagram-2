@@ -17,7 +17,7 @@ const MESSAGES = [
   'Я поскользнулся на банановой кожуре и уронил фотоаппарат на кота и у меня получилась фотография лучше.',
   'Лица у людей на фотке перекошены, как будто их избивают.',
   'Как можно было поймать такой неудачный момент ?!'
-]
+];
 
 const NAMES = [
   'Артём',
@@ -76,7 +76,7 @@ const getComments = () => {
   const quantityComments = getRandomInteger(COMMENTS.MIN, COMMENTS.MAX);
   const comments = [];
   for (j = 1; j <= quantityComments; j++) {
-    comments.push(getComment())
+    comments.push(getComment(j));
   }
   return comments;
 };
@@ -93,10 +93,9 @@ const getPhoto = (k) => ({
 const getPhotos = (count) => {
   const photos = [];
   for (let i = 1; i <= count; i++) {
-    photos.push(getPhoto(i))
+    photos.push(getPhoto(i));
   }
   return photos;
 };
 
-console.log(getPhotos(QUANTITY_PHOTOS))
-
+console.log(getPhotos(QUANTITY_PHOTOS));
