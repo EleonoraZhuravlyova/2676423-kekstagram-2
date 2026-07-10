@@ -75,7 +75,7 @@ const getComment = () => ({
 const getComments = () => {
   const quantityComments = getRandomInteger(COMMENTS.MIN, COMMENTS.MAX);
   const comments = [];
-  for (j = 1; j <= quantityComments; j++) {
+  for (let j = 1; j <= quantityComments; j++) {
     comments.push(getComment(j));
   }
   return comments;
