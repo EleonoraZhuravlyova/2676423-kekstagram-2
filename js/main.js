@@ -1,3 +1,4 @@
+
 const QUANTITY_PHOTOS = 25;
 
 const DESCRIPTIONS = [
@@ -99,3 +100,6 @@ const getPhotos = (count) => {
 };
 
 console.log(getPhotos(QUANTITY_PHOTOS));
+
+
+
